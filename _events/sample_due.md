@@ -1,6 +1,6 @@
 ---
 type: due
-date: 2019-12-28T23:59:59+3:30
-description: 'Custom Due/Deadline'
+date: 2024-02-29T14:00:00-6:00
+description: 'Exam 00'
 hide_from_announcments: true
 ---

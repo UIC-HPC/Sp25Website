@@ -1,10 +1,12 @@
 ---
 type: exam
-date: 2018-12-02T8:0:0+3:30
+date: 2024-02-29T14:00:00-6:00
 description: 'Midterm'
 hide_from_announcments: true
 ---
 **Topics:**
-1. Topic 1
-2. Topic 2
-3. Topic 3
+1. HPC History
+2. Architecture
+3. Benchmarking
+4. Resource Management
+5. OpenMP

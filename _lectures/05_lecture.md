@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-01-25T8:00:00+4:30
+date: 2024-01-25T14:00:00-6:00
 title: Sample Lecture 5
 tldr: "Short text to describe what this lecture is about."
 thumbnail: /_images/classlogo.png

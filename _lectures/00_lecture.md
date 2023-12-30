@@ -1,8 +1,8 @@
 ---
 type: lecture
-date: 2024-01-09T8:00:00+4:30
-title: Sample Lecture 0
-tldr: "Short text to describe what this lecture is about."
+date: 2024-01-09T14:00:00-6:00
+title: Welcome to Introduction to High Performance Computing
+tldr: "Overview of the Introduction to High Performance Computing course, walk through the syllabus."
 thumbnail: /_images/classlogo.png
 links: 
     - url: /static_files/presentations/lec.zip
@@ -12,6 +12,5 @@ links:
     - url: https://google.com
       name: slides
 ---
-**Suggested Readings:**
-- [Readings 1](http://example.com)
-- [Readings 2](http://example.com)
+**Required Readings:**
+- [Chapter 0](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000010/B9780124201583000010.xhtml#B9780124201583000010)

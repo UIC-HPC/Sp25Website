@@ -4,17 +4,14 @@ title: Materials
 permalink: /materials/
 ---
 
-{% include image.html url="/_images/cover2.jpg" width=175 align="right" %}
+{% include image.html url="/_images/sterling.jpg" width=175 align="right" %}
 
 ## Book
 
-Alan Turing and Noam Chomsky: Very Famous Book
+T. Sterling, M. Anderson, and M. Brodowicz, [High Performance Computing Modern Systems and Practices](https://www.elsevier.com/books/high performance-computing/sterling/978-0-12-420158-3), Morgan Kaufmann Publishers, 2018.
 
 ## Additional Course Materials
 
-* If you are not familiar with Python programming, use any online tutorial to get a handle of it.
-* [Material #1](http://www.example.com/): how a computer chess player thinks!
-* [Material #2](http://www.example.com/): how a computer chess player thinks!
-* [Material #3](http://www.example.com/): how a computer chess player thinks!
-* [Material #4](http://www.example.com/): how a computer chess player thinks!
-* [Material #5](http://www.example.com/): how a computer chess player thinks!
+* [Argonne Leadership Computing Facility](https://www.alcf.anl.gov)
+* [Advanced Cyberinfrastructure for Education and Research](https://acer.uic.edu)
+* [GitHub](https://www.github.com)

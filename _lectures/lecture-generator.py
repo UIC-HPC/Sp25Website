@@ -16,7 +16,7 @@ days_map = {
 def generate_content(date, counter):
     content = f"""---
 type: lecture
-date: {date.strftime('%Y-%m-%dT8:00:00+4:30')}
+date: {date.strftime('%Y-%m-%dT14:00:00-6:00')}
 title: Sample Lecture {counter}
 tldr: "Short text to describe what this lecture is about."
 thumbnail: /_images/classlogo.png
