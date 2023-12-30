@@ -9,7 +9,10 @@ last_updated: true # set to true if you want to display last updated in the foot
 
 schoolname: "University of Illinois Chicago"
 schoolurl: "https://www.uic.edu"
-twitter_username: mpapka 
+twitter_username: mpapka
+github_username: mpapka
+#google_scholar_id: pQwfBFwAAAAJ # your Google Scholar ID
+#orcid_id: 0000-0002-6418-5767 # your ORCID ID
 
 address: |
     Department of Computer Science
@@ -41,9 +44,10 @@ collections:
         output: true
     assignments:
         output: true
+    projects:
+        output: true
     announcements:
         output: false
-
 
 defaults:
   - scope:
@@ -51,3 +55,8 @@ defaults:
       type: "assignments"
     values:
       layout: "assignment"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

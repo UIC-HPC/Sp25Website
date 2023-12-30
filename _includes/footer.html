@@ -16,7 +16,11 @@
      
 
           {% if site.github_username %}
-
+  <li>
+    <a href="https://github.com/{{ site.github_username }}">
+      <i class="fab fa-github" style="color:gray"></i> {{ site.github_username }}
+    </a>
+  </li>
 {% endif %}
 
           {% if site.twitter_username %}
