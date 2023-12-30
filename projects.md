@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-Major projects for the class
+<!-- You can download the projects here. Also check out each project pages for any additional info. -->
