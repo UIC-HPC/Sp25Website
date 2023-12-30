@@ -1,0 +1,53 @@
+# Site settings
+course_name: Introduction to High Performance Computing
+course_description: "How are airplanes built without a physical prototype? How do we understand the evolution of the universe, or how are new cancer treatments identified for initial testing? Big problems require big computers - this course is meant to provide a general introduction to high performance computing and its role in today's world. This course will discuss the components of supercomputers, how they are organized, and the challenges in developing massive heterogeneous systems."
+course_semester: "Spring 2024"
+
+url: https://www.evl.uic.edu # the base hostname & protocol for your site
+baseurl: /papka/cs494/ # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
+
+schoolname: "University of Illinois Chicago"
+schoolurl: "https://www.uic.edu"
+twitter_username: mpapka 
+
+address: |
+    Department of Computer Science
+    University of Illinois Chicago
+    Chicago, IL 60607
+
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# google_analytics: UA-XXXXXXXX-X
+
+### Do not change the followings unless you know what you are doing ###
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+dateformat: "%mm/%dd/%YYYY"
+
+future: true
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
