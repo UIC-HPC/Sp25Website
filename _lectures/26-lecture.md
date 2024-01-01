@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-04-25T14:00:00-0500
-title: Final Exam Review
+title: Review01
 #tldr: "Short text to describe what this lecture is about."
 thumbnail: /_images/classlogo.png
 #links: 
