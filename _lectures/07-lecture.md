@@ -15,4 +15,4 @@ thumbnail: /_images/classlogo.png
 
 **Additional Material:**
 - **_Multicore and GPU Programming_** (Gerassimos Barlas) - [_Shared-Memory Programming: OpenMP_](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000071/B9780124201583000071.xhtml)
-- **_Parallel Programming_** (Bertil Schmidt, Jorge Gonzalez-Martinez, Christian Hundt, Moritz Schlarb) - [_OpenMP_](https://learning.oreilly.com/library/view/parallel-programming/9780128044865/B978012849890300006X.xhtml)
+- **_Parallel Programming_** (Bertil Schmidt, Jorge Gonzalez-Martinez, Christian Hundt and Moritz Schlarb) - [_OpenMP_](https://learning.oreilly.com/library/view/parallel-programming/9780128044865/B978012849890300006X.xhtml)

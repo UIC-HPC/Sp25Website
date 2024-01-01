@@ -7,7 +7,8 @@ title: Survey
 #solutions: /static_files/assignments/asg_solutions.pdf
 due_event: 
     type: due
-    date: 2024-01-16T14:00:00-0600
+    date: 2024-01-12T14:00:00-0600
     description: Survey Due
 ---
-<!-- This is a sample assignment. -->
+
+Please take a moment to complete the [course survey](https://forms.office.com/r/Akiidu6euX). This essential tool helps me understand each student's background, enabling me to tailor the course content and make necessary adjustments accordingly. This survey is mandatory and serves as the first snippet/quiz assignment, it is worth 25 points.

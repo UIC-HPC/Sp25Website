@@ -4,4 +4,4 @@ title: Assignments
 permalink: /assignments/
 ---
 
-<!-- You can download the assignments here. Also check out each assignment page for any additional info. -->
+This is the list of expected assignments for this class, the release and due dates are subject to change.

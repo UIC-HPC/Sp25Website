@@ -10,4 +10,3 @@ due_event:
     date: 2024-01-16T14:00:00-0600
     description: Git and GitHub Due
 ---
-<!-- This is a sample assignment. -->

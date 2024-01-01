@@ -5,14 +5,17 @@ layout: page
 {{ content }}
 <ul id="archive">
 {% for prj in site.projects %}
-      <li class="archiveposturl" style="background: transparent">
-        <span><a href="{{ prj.url | prepend: site.baseurl}}">{{ prj.title }}</a></span>
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
-<a title="Download problems (pdf)" href="{{ prj.pdf | prepend: site.baseurl }}"><i class="fas fa-file-pdf"></i></a> 
-{% if prj.attachment %}
-&nbsp; <a title="Download attachments (zip)" href="{{ prj.attachment | prepend: site.baseurl }}"><i class="fas fa-file-archive"></i></a>
-{% endif %}
-</strong> 
-      </li>
+    <li class="archiveposturl" style="background: transparent">
+        <span>
+            <a href="{{ prj.url | prepend: site.baseurl }}">{{ prj.title }}</a> 
+            <br>
+            <small>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Released:</strong> {{ prj.date | date: site.dateformat }}
+                {% if prj.due_event %}
+                    <strong>Due:</strong> {{ prj.due | date: site.dateformat }} {{ prj.due_event.date | date: "%A %m/%d/%Y @ %I:%M %p" }}
+                {% endif %}
+            </small>
+        </span>
+    </li>
 {% endfor %}
 </ul>

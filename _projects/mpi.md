@@ -8,5 +8,5 @@ title: MPI
 due_event: 
     type: due
     date: 2024-04-16T23:59:00-0500
-    description: MPI Due
+    description: MPI Project Due
 ---

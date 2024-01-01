@@ -8,5 +8,5 @@ title: OpenMP
 due_event: 
     type: due
     date: 2024-02-27T23:59:00-0600
-    description: OpenMP Due
+    description: OpenMP Project Due
 ---
