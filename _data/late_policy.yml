@@ -1,4 +1,1 @@
-policies:
-  - You have free 8 late days.
-  - You can use late days for assignments. A late day extends the deadline 24 hours.
-  - Once you have used all 8 late days, the penalty is 10% for each additional late day.
+policies: Projects submitted late will incur a deduction of 10% per day, including weekends and university holidays, from the maximum possible score. Submissions beyond three days late will result in a score of 0. Each missing assignment will initially reduce your grade by <b>50 points</b> [reflected as -50 points in Blackboard]. However, to mitigate this penalty, late submissions can be turned in for a grade of zero until the Monday of the final week of the semester, effectively removing the negative points.

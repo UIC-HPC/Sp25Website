@@ -18,7 +18,7 @@ layout: page
       </div>
       {% endif %}
       <div class="content">
-          <span style="font-weight: bold;">{{ lecture.title }}</span><br>
+          <span style="font-weight: bold;"><a href="{{ lecture.url | prepend: site.baseurl }}">{{ lecture.title }}</a></span><br>
 
   <!--        <strong>tl;dr:</strong> {{ lecture.tldr }} -->
           {{ lecture.tldr }}
