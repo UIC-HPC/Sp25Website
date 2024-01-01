@@ -5,6 +5,7 @@ import datetime
 import pytz
 import re
 
+
 def assign_quiz(entry):
     """Generate a markdown file for a quiz or an assignment entry based on 'Snippets/Quizzes' value."""
     if entry.get('Snippets/Quizzes'):
@@ -14,6 +15,7 @@ def assign_quiz(entry):
             return  # Exit the function if the date couldn't be parsed
 
         snippets_quizzes = entry['Snippets/Quizzes']
+
         if "Quiz" in snippets_quizzes:
             # It's a quiz
             filename = f"{snippets_quizzes.lower().replace(' ', '_')}.md"
@@ -29,7 +31,7 @@ Any material or readings covered prior to this quiz.
         else:
             # It's an assignment
             due_date = calculate_next_tuesday(formatted_date)
-            filename = f"{snippets_quizzes.replace(' ', '_')}.md"
+            filename = f"{snippets_quizzes.lower().replace(' ', '_')}.md"
             file_path = f"../_assignments/{filename}"
             content = f"""---
 type: assignment
@@ -80,7 +82,7 @@ def projects(entry):
         due_date = calculate_due_date(formatted_date)
 
         # Normalize the project title for the markdown file name
-        project_title = re.sub(r'[^\w\s]', '', entry['Projects']).replace(' ', '_')
+        project_title = re.sub(r'[^\w\s]', '', entry['Projects']).lower().replace(' ', '_')
         project_filename = f"../_projects/{project_title}.md"
 
         # Create the content for the markdown file
@@ -126,7 +128,7 @@ def exam(entry):
             return  # Exit the function if the date couldn't be parsed
 
         # Normalize the content title for the markdown file name
-        content_title = re.sub(r'[^\w\s]', '', entry['Content']).replace(' ', '_')
+        content_title = re.sub(r'[^\w\s]', '', entry['Content']).lower().replace(' ', '_')
         exam_filename = f"../_events/{content_title}.md"
 
         # Create the content for the markdown file
@@ -235,8 +237,12 @@ def validate_input():
     return excel_file_name
 
 def read_excel(file_name):
-    """Read the Excel file and return a DataFrame."""
-    return pd.read_excel(file_name)
+    """Read the Excel file and return a DataFrame with NaN replaced by blank strings."""
+    df = pd.read_excel(file_name)
+    # Replace NaN values with an empty string
+    df = df.fillna('')
+    return df
+
 
 def create_latex_content(df):
     """Generate LaTeX content from the DataFrame."""
