@@ -10,5 +10,5 @@ thumbnail: /_images/classlogo.png
 #   - url: /static_files/presentations/code.zip
 #      name: codes
 ---
-**Material Covered:**
-- [Chapter 02]()
+**Material Assigned:**
+- [Chapter 02](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000022/B9780124201583000022.xhtml)
