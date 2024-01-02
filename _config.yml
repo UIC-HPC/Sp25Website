@@ -65,3 +65,22 @@ defaults:
       type: "lectures"
     values:
       layout: "lecture"
+
+
+# Includes & excludes
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# -----------------------------------------------------------------------------
+# Jekyll Link Attributes
+# -----------------------------------------------------------------------------
+
+# These are the defaults
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+  exclude:
