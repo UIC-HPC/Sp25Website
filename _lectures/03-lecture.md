@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-01-18T14:00:00-0600
-title: Class Tools and Resources II
+title: Introduction and History HPC
 #tldr: "Short text to describe what this lecture is about."
 thumbnail: /_images/classlogo.png
 #links: 

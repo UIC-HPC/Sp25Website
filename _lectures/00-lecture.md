@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-01-09T14:00:00-0600
-title: Welcome
+title: Welcome to HPC
 tldr: "Discussion of course, expectations and general overview."
 thumbnail: /_images/classlogo.png
 links: 
