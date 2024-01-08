@@ -468,6 +468,21 @@
      .thumbnail {
        width: 120px;
      }
+
+     .thumbnail135 {
+        width: 120px;  /* Fixed width */
+        height: 120px; /* Fixed height */
+        position: relative; /* Ensures the content is positioned correctly */
+        overflow: hidden; /* Ensures no spillover */
+        background: transparent; /* Makes the background transparent */
+      }
+      
+      .center-cropped-noborder {
+        width: 100%; /* Ensures the div fills the container */
+        height: 100%; /* Ensures the div fills the container */
+        background: none; /* Ensures no background image is used */
+      }
+      
      
      .content {
        flex: 1;

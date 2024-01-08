@@ -10,7 +10,13 @@ layout: page
 {% if lecture.date < site.time %}
   <li class="archiveposturl" style="background: transparent">
   <div class="lecture-container">
-
+      {% if lecture.thumbnail %}
+      <div class="thumbnail135">
+        <div class="center-cropped-noborder" style="margin-top:5px;margin-bottom:5px;background-image: url('{{ lecture.thumbnail | prepend: site.baseurl }}');">
+          <img src="{{ lecture.thumbnail | prepend: site.baseurl }}"/>
+        </div>
+      </div>
+      {% endif %}
       <div class="content">
         <span class="post-meta">{{ lecture.date | date: "%A" }} {{ lecture.date | date: site.dateformat }} </span><br>
           <h1 style="font-weight: bold;"> {{ lecture.title }}</h1>
@@ -25,11 +31,13 @@ layout: page
           {% endif %}
           <br>
           {% if lecture.content != '' %}
-            {{ lecture.content }}
+          <div class="markdown-content" style="margin-top: 3px;"></div>
+          {{ lecture.content }}
+          </div>
           {% endif %}
       </div>
   </div>
   </li>
-{% endif %}
+  {% endif %}
 {% endfor %}
 </ul>

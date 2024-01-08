@@ -10,6 +10,4 @@ thumbnail: /_images/classlogo.png
 #   - url: /static_files/presentations/code.zip
 #      name: codes
 ---
-**Material Assigned:**
-- [Chapter 13](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000137/B9780124201583000137.xhtml)
-- [Chapter 20](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000204/B9780124201583000204.xhtml)
+**Readings:** [[Chapter 13](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000137/B9780124201583000137.xhtml)][[Chapter 20](https://learning.oreilly.com/library/view/high-performance-computing/9780124202153/XHTML/B9780124201583000204/B9780124201583000204.xhtml)]

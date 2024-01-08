@@ -5,7 +5,7 @@ title: Git and GitHub
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
-classroom: GitHub Classroom Not Open Yet!
+classroom: https://classroom.github.com/a/gc8KNZ8z
 due_event: 
     type: due
     date: 2024-01-16T14:00:00-0600
@@ -54,7 +54,7 @@ Your assignment is due by <Month> <Day>, <Year>, <Time> CST
 **Note:** You may receive an email invitation to join UIC-HPC on your behalf. No further action is necessary.
 ```
 
-3) Depending on where you do your development, you can either click on the link and work from your browser or use command line tools as demonstrated in class. Either way, you will need eventually to generate a local repository. You should use one of the public CS resources, such as systems1.cs.anl.gov, to get used to working remotely, which you will need to do once we move to the HPC systems.
+3) Depending on where you do your development, you can either click on the link and work from your browser or use command line tools as demonstrated in class. Either way, you will need eventually to generate a local repository. You should use one of the public CS resources, such as `systems{1-4}.cs.anl.gov`, to get used to working remotely, which you will need to do once we move to the HPC systems.
 
 4) You will then complete the assignment as follows:
 
@@ -76,10 +76,42 @@ Your assignment is due by <Month> <Day>, <Year>, <Time> CST
 cut << "I'm looking forward to learning about high performance computing!!" << endl;   // Yes, I know there is a typo!!!
 ```
 
-* You will then create a `Makefile` for this assignment, generating a Makefile that compiles and builds an executable named *introduction*. The Makefile must produce an `introduction` by executing the command `make.`
+* You will then create a `Makefile` for this assignment, generating a Makefile that compiles and builds an executable named *introduction*. The Makefile must produce an `introduction` by executing the command `make`.
+
+```Makefile
+# Define the C++ compiler to use
+CXX = g++
+
+# Define any compile-time flags
+CXXFLAGS = -std=c++14 -Wall -Wextra -pedantic -Wno-unused-parameter
+
+# Define the C++ source files
+SOURCES = introduction.cc
+
+# Define the C++ object files
+OBJECTS = $(SOURCES:.cc=.o)
+
+# Define the executable file 
+MAIN = introduction
+
+.PHONY: all clean
+
+all: $(MAIN)
+	@echo Congratulations $(MAIN) has been compiled!
+
+$(MAIN): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $(MAIN) $(OBJECTS)
+
+.cc.o:
+	$(CXX) $(CXXFLAGS) -c $<  -o $@
+
+clean:
+	$(RM) *.o *~ $(MAIN)
+
+```
 
 * You will now add the Makefile to your local repository, commit changes, and push to the remote repository.
 
-* You will execute the `make` command, correct any compiler errors, commit changes, and push to the remote repository.
+* You will execute the `make` command, correct any compiler errors, commit changes, and push to the remote repository. If during the `make` you get an error `Makefile:19: *** missing separator.  Stop.` this is likely due to cut and paste where the `<tab>` required by **make** is replaced with `<spaces>`.
 
 When your program is ready for grading, ***commit*** and ***push*** your local repository to the remote git classroom repository and follow the _**Assignment Submission Instructions**_. 

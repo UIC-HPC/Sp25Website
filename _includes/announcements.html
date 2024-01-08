@@ -1,4 +1,4 @@
-{% assign all_events = site.events | concat: site.lectures %}
+{% comment %}{% assign all_events = site.events | concat: site.lectures %} {% endcomment %} 
 {% assign all_events = all_events | concat: site.assignments %}
 {% assign all_events = all_events | concat: site.projects %}
 
@@ -29,9 +29,7 @@
     {% if trimmed_content.size > 0 %}
     <li class="no-p-margin">
         {% if n.type %}
-            {% if n.type == 'lecture' %}
-                New reading material assigned see: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
-            {% elsif n.type == 'assignment' %}
+            {% if n.type == 'assignment' %}
                 New assignment released: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
             {% elsif n.type == 'project' %}
                 New project released: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
