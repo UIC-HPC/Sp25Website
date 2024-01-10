@@ -18,10 +18,10 @@ layout: page
           <strong>tl;dr:</strong> {{ lecture.tldr }}<br>
           {% endif %}
           {% if lecture.slides %}
-          <strong>Artifacts:</strong> [<a href="{{ page.slides }}">slides</a>]
+          <strong>Artifacts:</strong> [<a href="{{ lecture.slides }}">slides</a>]
           {% endif %}
           {% if lecture.code %}
-          [<a href="{{ page.code }}">code</a>]
+          [<a href="{{ lecture.code }}">code</a>]
           {% endif %}
           <br>
           {% if lecture.content != '' %}
