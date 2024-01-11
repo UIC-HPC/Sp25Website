@@ -1,8 +1,8 @@
 ---
 type: lecture
 date: 2024-02-22T14:00:00-0600
-title: OpenMP Hands-On III
-#tldr: "Short text to describe what this lecture is about."
+title: Introduction to CUDA (Guest Lecture)
+tldr: "Guest lecture by Professor Lan (University of Illinois Chicago)"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com

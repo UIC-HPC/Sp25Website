@@ -1,8 +1,8 @@
 ---
 type: lecture
 date: 2024-02-20T14:00:00-0600
-title: OpenMP III
-#tldr: "Short text to describe what this lecture is about."
+title: Introduction to SYCL (Guest Lecture)
+tldr: "Guest lecture by Professor Thiruvathukal (Loyola University)"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com
