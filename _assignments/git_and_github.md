@@ -12,7 +12,7 @@ due_event:
     description: Git and GitHub Due
 ---
 
-# Introduction to Git/GitHub
+# Introduction to Git/GitHub (25 points)
 
 You will ***not*** have to write any code for this computer assignment.
 

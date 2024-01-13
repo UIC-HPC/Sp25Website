@@ -11,7 +11,7 @@ due_event:
     date: 2024-01-19T14:00:00-0600
     description: C++ and Make Due
 ---
-# Prime Number Calculation and Performance Analysis
+# Prime Number Calculation and Performance Analysis (25 points)
 
 Write a C++ program to calculate prime numbers within a given range. You will then analyze the performance of your solution by collecting and discussing data on execution time for varying problem sizes.
 

@@ -12,4 +12,4 @@ due_event:
     description: Survey Due
 ---
 
-Please take a moment to complete the [course survey](https://forms.office.com/r/Akiidu6euX). This essential tool helps me understand each student's background, enabling me to tailor the course content and make necessary adjustments accordingly. This survey is mandatory and serves as the first snippet/quiz assignment.
+Please take a moment to complete the [course survey](https://forms.office.com/r/Akiidu6euX). This essential tool helps me understand each student's background, enabling me to tailor the course content and make necessary adjustments accordingly. This survey is mandatory and serves as the first snippet/quiz assignment along with setting up your *Slack* account (25 points).

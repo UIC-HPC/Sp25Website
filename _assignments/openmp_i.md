@@ -11,4 +11,4 @@ due_event:
     date: 2024-02-13T14:00:00-0600
     description: OpenMP I Due
 ---
-<!-- This is a sample assignment. -->
+<!-- This is a sample assignment. (25 points)-->

@@ -12,7 +12,7 @@ due_event:
     description: HPC Accounts Due
 ---
 
-You need to request [ALCF account](https://www.alcf.anl.gov/support-center/get-started/request-account), this is the easiest assignment you will have all semester.
+You need to request [ALCF account](https://www.alcf.anl.gov/support-center/get-started/request-account), this is the easiest assignment (25 points) you will have all semester.
 
 Most of the answers should be straight forward in how to answer but some guidance is provided below:
 

@@ -12,4 +12,4 @@ due_event:
     description: Threads and Graphs
 ---
 
-<!-- Comment -->
+<!-- Comment (25 points)-->

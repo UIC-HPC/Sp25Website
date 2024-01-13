@@ -11,4 +11,4 @@ due_event:
     date: 2024-04-09T14:00:00-0500
     description: MPI II Due
 ---
-<!-- This is a sample assignment. -->
+<!-- This is a sample assignment. (25 points)-->
