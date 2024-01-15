@@ -9,8 +9,10 @@ last_updated: true # set to true if you want to display last updated in the foot
 
 schoolname: "University of Illinois Chicago"
 schoolurl: "https://www.uic.edu"
-twitter_username: mpapka
-github_username: mpapka
+blackboard: "https://uic.blackboard.com"
+department: "https://www.cs.uic.edu"
+#twitter_username: mpapka
+#github_username: mpapka
 #google_scholar_id: pQwfBFwAAAAJ # your Google Scholar ID
 #orcid_id: 0000-0002-6418-5767 # your ORCID ID
 
