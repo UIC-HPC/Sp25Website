@@ -1,4 +1,4 @@
 ---
-date: 2023-12-30T10:00:00+3:30
+date: 2023-01-16T10:00:00+3:30
 ---
-<b>Welcome to Introduction to High Performance Computing!</b>
+🥶 <b>We are online today (01/16) - see email/Slack for Zoom link!</b>

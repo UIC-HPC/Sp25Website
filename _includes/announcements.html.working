@@ -2,23 +2,13 @@
 {% assign all_events = all_events | concat: site.assignments %}
 {% assign all_events = all_events | concat: site.projects %}
 
-{% assign current_time = 'now' | date: '%s' %}
-{% assign two_weeks_from_now = current_time | plus: 1209600 | date: '%Y-%m-%d' %}
+{% assign two_weeks_from_now = 'now' | date: '%s' | plus: 1209600 | date: '%Y-%m-%d' %}
 
 {% assign events_to_show = "" | split: "" %}
 {% for e in all_events %}
     {% unless e.hide_from_announcements %}
         {% assign event_date = e.date | date: '%Y-%m-%d' %}
-        {% assign due_date_passed = false %}
-        
-        {% if e.due_event %}
-            {% assign due_date = e.due_event.date | date: '%s' %}
-            {% if due_date < current_time %}
-                {% assign due_date_passed = true %}
-            {% endif %}
-        {% endif %}
-
-        {% if event_date <= two_weeks_from_now and due_date_passed == false %}
+        {% if event_date <= two_weeks_from_now %}
             {% assign trimmed_content = e.content | remove_html_comments | strip_newlines | strip %}
             {% if trimmed_content.size > 0 %}
                 {% assign events_to_show = events_to_show | push: e %}
