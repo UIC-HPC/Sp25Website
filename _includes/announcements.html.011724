@@ -27,15 +27,7 @@
     {% endunless %}
 {% endfor %}
 
-{% assign filtered_announcements = "" | split: "" %}
-{% for a in site.announcements %}
-    {% assign announcement_date = a.date | date: '%Y-%m-%d' %}
-    {% if announcement_date <= two_weeks_from_now %}
-        {% assign filtered_announcements = filtered_announcements | push: a %}
-    {% endif %}
-{% endfor %}
-
-{% assign all_events = events_to_show | concat: filtered_announcements %}
+{% assign all_events = events_to_show | concat: site.announcements %}
 {% assign all_events_sorted = all_events | sort: 'date' %}
 
 {% if all_events_sorted.size > 0 %}
@@ -48,9 +40,9 @@
     <li class="no-p-margin">
         {% if n.type %}
             {% if n.type == 'assignment' %}
-                Upcoming Assignment: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
+                New assignment released: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
             {% elsif n.type == 'project' %}
-                Upcoming Project: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
+                New project released: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
             {% else %}
                 {{ n.description }}
             {% endif %}
