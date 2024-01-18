@@ -8,7 +8,7 @@ title: C++ and Make
 classroom: https://classroom.github.com/a/2TQINBWg
 due_event: 
     type: due
-    date: 2024-01-19T14:00:00-0600
+    date: 2024-01-23T14:00:00-0600
     description: C++ and Make Due
 ---
 # Prime Number Calculation and Performance Analysis (25 points)

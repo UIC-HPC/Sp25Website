@@ -8,7 +8,7 @@ title: Git and GitHub
 classroom: https://classroom.github.com/a/gc8KNZ8z
 due_event: 
     type: due
-    date: 2024-01-16T14:00:00-0600
+    date: 2024-01-19T23:59:00-0600
     description: Git and GitHub Due
 ---
 
