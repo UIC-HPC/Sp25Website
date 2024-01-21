@@ -48,9 +48,9 @@
     <li class="no-p-margin">
         {% if n.type %}
             {% if n.type == 'assignment' %}
-                Upcoming Assignment: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
+                Upcoming or Active Assignment: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
             {% elsif n.type == 'project' %}
-                Upcoming Project: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
+                Upcoming or Active Project: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
             {% else %}
                 {{ n.description }}
             {% endif %}
