@@ -2,8 +2,9 @@
 type: lecture
 date: 2024-01-25T14:00:00-0600
 title: Architecture II
-#tldr: "Short text to describe what this lecture is about."
+tldr: "Brief overview of commodity clusters and deep dive into the Aurora supercomputer"
 thumbnail: /_images/classlogo.png
+slides: https://uic365-my.sharepoint.com/:b:/g/personal/papka_uic_edu/ERDoh0LF2dtFgqFp8F7Gk04ByMymquVFjyT5CmPTV3_VJQ?e=QuKU5z
 #links: 
 #    - url: https://google.com
 #      name: slides
