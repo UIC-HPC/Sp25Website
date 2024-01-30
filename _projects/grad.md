@@ -12,7 +12,7 @@ due_event:
 ---
 This graduate project offers two distinct paths: **Science Uses** and **Computer Science Problems**. Students will select a path to investigate a specific area, engaging in extensive reading and synthesizing information into a comprehensive report. The report, approximately 1500 words, should include graphs, figures, and at least five references.
 
-## Path Options and Topics
+## Path Options (Pick One)
 
 ### Science Uses Path
 
