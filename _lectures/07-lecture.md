@@ -2,8 +2,9 @@
 type: lecture
 date: 2024-02-01T14:00:00-0600
 title: Threads and Creating Graphs
-#tldr: "Short text to describe what this lecture is about."
+tldr: "Review / introduction to C++ threads and simple python graphs"
 thumbnail: /_images/classlogo.png
+slides: https://uic365-my.sharepoint.com/:b:/g/personal/papka_uic_edu/EWKfn9FBKdxNuz-rdyUMIEsBJf4WvSPLxK9ZgOTnvpUj-w?e=ruNr7P
 #links: 
 #    - url: https://google.com
 #      name: slides
