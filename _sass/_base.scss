@@ -292,6 +292,20 @@
          border-style: solid;
          border-bottom: none;
      }
+
+     .table-row-divider {
+        padding: 4px 5px;
+        background-color: purple;
+        border-color: whitesmoke;
+        border-width: 0.1em;
+        border-style: solid;
+        border-bottom: none;
+    }
+
+    .divider-purple {
+       border-bottom: 0.5px solid purple;
+       margin: 0.005px 0;
+   }
  
      .table-row-assignment {
          background-color: #def2de;

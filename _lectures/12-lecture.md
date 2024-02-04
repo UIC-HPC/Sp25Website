@@ -1,8 +1,8 @@
 ---
 type: lecture
 date: 2024-02-20T14:00:00-0600
-title: Introduction to SYCL (Guest Lecture)
-tldr: "Guest lecture by Professor Thiruvathukal (Loyola University)"
+title: Introduction to SYCL
+tldr: "SYCL bridges heterogeneous computing in C++."
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com
@@ -10,3 +10,4 @@ thumbnail: /_images/classlogo.png
 #   - url: /static_files/presentations/code.zip
 #      name: codes
 ---
+Guest lecture by [Professor Thiruvathukal](https://gkt.sh) (Loyola University) on [SYCL](https://www.khronos.org/sycl/).

@@ -28,17 +28,22 @@ layout: default
 
         {% assign all_events_sorted = all_events | sort: 'date' %}
         {% assign today = site.time | date: '%Y-%m-%d' %}
+        {% assign last_week_number = 0 %}
+
         {% for event in all_events_sorted %}
             {% assign event_date = event.date | date: '%Y-%m-%d' %}
             {% if event_date >= today %}
+                {% assign current_week_number = event.date | date: '%U' %}
+                {% if current_week_number != last_week_number and last_week_number != 0 %}
+                <li class="table-row-divider">
+                    <div class="col col-full divider-purple"></div>
+                </li>                
+                {% endif %}
                 <li class="table-row table-row-{{ event.type }}">
                     {% include schedule_row_{{ event.type }}.html event=event %}
                 </li>
+                {% assign last_week_number = current_week_number %}
             {% endif %}
         {% endfor %}
-
-
-
-
     </ul>
 </div>
