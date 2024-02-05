@@ -22,7 +22,7 @@ address: |
     Chicago, IL 60607
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
-# google_analytics: UA-XXXXXXXX-X
+google_analytics: G-RDB7MC9C75
 
 ### Do not change the followings unless you know what you are doing ###
 
