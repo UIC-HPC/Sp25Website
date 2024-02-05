@@ -8,7 +8,7 @@ title: Strong and Weak Scaling with OpenMP
 classroom: https://classroom.github.com/a/lu7rpHfk
 due_event: 
     type: due
-    date: 2024-02-27T14:00:00-0600
+    date: 2024-02-29T23:59:00-0600
     description: Strong and Weak Scaling with OpenMP
 ---
 # Strong and Weak Scaling with Numerical Integration using OpenMP

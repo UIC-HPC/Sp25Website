@@ -8,7 +8,7 @@ title: Scalability of Threads in Quicksort
 classroom: https://classroom.github.com/a/2cRS5gR4
 due_event: 
     type: due
-    date: 2024-02-08T14:00:00-0600
+    date: 2024-02-08T23:59:00-0600
     description: Scalability of Threads in Quicksort
 ---
 
