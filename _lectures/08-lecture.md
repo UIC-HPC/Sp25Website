@@ -5,6 +5,7 @@ title: OpenMP I
 tldr: "Initial OpenMP discussion, basic idea and how it works"
 thumbnail: /_images/classlogo.png
 slides: https://uic365-my.sharepoint.com/:b:/g/personal/papka_uic_edu/EbwuDpW1c-pFiw3E1bLgHKIB8euloQ2oHFi0kDCKeDZVQw?e=zZbmEJ
+code: https://github.com/UIC-HPC/SRC/tree/main/Lecture08
 #links: 
 #    - url: https://google.com
 #      name: slides

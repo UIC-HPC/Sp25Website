@@ -5,6 +5,7 @@ title: Threads and Creating Graphs
 tldr: "Review / introduction to C++ threads and simple python graphs"
 thumbnail: /_images/classlogo.png
 slides: https://uic365-my.sharepoint.com/:b:/g/personal/papka_uic_edu/EWKfn9FBKdxNuz-rdyUMIEsBJf4WvSPLxK9ZgOTnvpUj-w?e=ruNr7P
+code: https://github.com/UIC-HPC/SRC/tree/main/Lecture07
 #links: 
 #    - url: https://google.com
 #      name: slides
