@@ -11,6 +11,35 @@ due_event:
     date: 2024-03-07T23:59:00-0600
     description: Parallel Painting Project Due
 ---
+
+<h2 style="text-align: center;">Weekly Speedup Challenge</h2>
+
+<table style="width: 100%; border-collapse: collapse;">
+    <tr>
+        <th style="border: 1px solid black; padding: 8px; text-align: left;">Week</th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;" colspan="3">Results (speedup)</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>One</b> (02/19)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇Seyfal Sultanov (32x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈Kirk Tejas (6x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉-</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Two</b> (02/26)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇-</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈-</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉-</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Three</b> (03/04)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇-</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈-</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉-</td>
+    </tr>
+</table>
+<br>
+
 # Parallel Painting
 #### A Mandelbrot Set Parallelization Project
 
