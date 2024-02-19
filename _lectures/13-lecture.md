@@ -2,7 +2,7 @@
 type: lecture
 date: 2024-02-22T14:00:00-0600
 title: Introduction to CUDA
-tldr: CUDA enables general-purpose computing on Nvidia GPUs.
+tldr: "CUDA enables general-purpose computing on Nvidia GPUs"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com

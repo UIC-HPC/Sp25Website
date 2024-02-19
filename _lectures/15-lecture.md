@@ -2,7 +2,7 @@
 type: lecture
 date: 2024-03-05T14:00:00-0600
 title: Algorithms and Debugging
-#tldr: "Short text to describe what this lecture is about."
+tldr: "Algorithms used in HPC and debugging strategies"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com

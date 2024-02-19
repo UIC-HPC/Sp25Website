@@ -2,7 +2,7 @@
 type: lecture
 date: 2024-04-04T14:00:00-0500
 title: MPI Hands-On I
-#tldr: "Short text to describe what this lecture is about."
+tldr: "Getting hands dirty with MPI"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com

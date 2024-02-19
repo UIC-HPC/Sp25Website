@@ -2,7 +2,7 @@
 type: lecture
 date: 2024-02-20T14:00:00-0600
 title: Introduction to SYCL
-tldr: "SYCL bridges heterogeneous computing in C++."
+tldr: "SYCL brings heterogeneous computing to C++"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com

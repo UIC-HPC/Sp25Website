@@ -2,7 +2,7 @@
 type: lecture
 date: 2024-03-07T14:00:00-0600
 title: Checkpointing and Performance
-#tldr: "Short text to describe what this lecture is about."
+tldr: "Saving your work and measuring performance"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com
