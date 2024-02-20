@@ -77,3 +77,73 @@ Grades will reflect the speed improvement of the parallelized code compared to t
 
 ## Ethics Statement
 Collaboration is encouraged for learning and discussion, but direct code sharing is prohibited. Ensure your submissions are original and appropriately cite any external sources.
+
+<h2 style="text-align: center;">Baseline Mandelbrot Performance Timings</h2>
+
+<table style="width: 100%; border-collapse: collapse;">
+    <tr>
+        <th style="border: 1px solid black; padding: 8px; text-align: left;"><b>Iterations</b></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><b>Trial 1</b></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><b>Trial 2</b></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><b>Trial 3</b></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><b>Trial 4</b></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><b>Trial 5</b></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: right;"><b>Average</b></th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">500</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">10.51s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">10.38s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">10.56s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">10.73s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">10.77s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: right;"><b>10.59s</b></td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">1000</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">19.80s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">18.97s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">17.80s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">18.19s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">19.17s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: right;"><b>18.79s</b></td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">2000</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">32.91s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">35.30s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">36.08s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">35.71s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">35.47s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: right;"><b>35.10s</b></td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">4000</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">65.39s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">65.86s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">66.94s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">68.73s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">67.69s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: right;"><b>66.92s</b></td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">8000</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">133.33s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">136.81s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">134.79s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">132.98s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">128.32s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: right;"><b>133.25s</b></td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">16000</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">263.33s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">258.65s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">260.77s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">254.36s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: center;">269.13s</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: right;"><b>261.25s</b></td>
+    </tr>
+</table>
+<br>
+*Measurements made on 02/21/2024 using systems2.cs.uic.edu*
