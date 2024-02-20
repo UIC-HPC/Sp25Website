@@ -50,10 +50,11 @@
                     {% if n.type != 'assignment' and n.type != 'project' %}
                         {{ n.content }}
                     {% else %}
+                        {% assign due_date_formatted = n.due_event.date | date: '%B %d, %Y @ %I:%M%p' %} <!-- Format the due date as Month Day, Year @ Time -->
                         {% if n.type == 'assignment' %}
-                            Upcoming or Active Assignment: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
+                            Upcoming or Active Assignment: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>  (<b>Due:</b> {{ due_date_formatted }})
                         {% elsif n.type == 'project' %}
-                            Upcoming or Active Project: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>
+                            Upcoming or Active Project: <a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>  (<b>Due:</b> {{ due_date_formatted }})
                         {% else %}
                             {{ n.description }}
                         {% endif %}
