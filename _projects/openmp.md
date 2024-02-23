@@ -1,6 +1,6 @@
 ---
 type: project
-date: 2024-02-08T14:00:00-0600
+date: 2024-02-08T23:59-0600
 title: Parallel Painting
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip

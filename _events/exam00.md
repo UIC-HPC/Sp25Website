@@ -1,6 +1,6 @@
 ---
 type: exam
-date: 2024-02-29T14:00:00-0600
+date: 2024-03-07T14:00:00-0600
 description: Exam00
 hide_from_announcements: false
 ---
