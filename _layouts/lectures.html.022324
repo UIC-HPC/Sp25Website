@@ -17,13 +17,13 @@ layout: page
           {% if lecture.tldr %}
           <strong>tl;dr:</strong> {{ lecture.tldr }}<br>
           {% endif %}
-          {% if lecture.slides or lecture.code %}
-          <strong>Artifacts:</strong> 
-              {% if lecture.slides %}[<a href="{{ lecture.slides }}">slides</a>]{% endif %}
-              {% if lecture.slides and lecture.code %}{% endif %}
-              {% if lecture.code %}[<a href="{{ lecture.code }}">code</a>]{% endif %}
-          <br>
+          {% if lecture.slides %}
+          <strong>Artifacts:</strong> [<a href="{{ lecture.slides }}">slides</a>]
           {% endif %}
+          {% if lecture.code %}
+          [<a href="{{ lecture.code }}">code</a>]
+          {% endif %}
+          <br>
           {% if lecture.content != '' %}
             {{ lecture.content }}
           {% endif %}
