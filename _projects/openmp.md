@@ -1,6 +1,6 @@
 ---
 type: project
-date: 2024-02-08T23:59-0600
+date: 2024-02-07T23:59-0600
 title: Parallel Painting
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
@@ -8,7 +8,7 @@ title: Parallel Painting
 classroom: https://classroom.github.com/a/vYIIH5G_
 due_event: 
     type: due
-    date: 2024-03-07T23:59:00-0600
+    date: 2024-03-08T23:59:00-0600
     description: Parallel Painting Project Due
 ---
 
