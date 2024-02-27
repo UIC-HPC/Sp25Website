@@ -4,6 +4,7 @@ date: 2024-02-27T14:00:00-0600
 title: Algorithms and Debugging
 tldr: "Algorithms used in HPC and debugging strategies"
 thumbnail: /_images/classlogo.png
+slides: https://uic365-my.sharepoint.com/:b:/g/personal/papka_uic_edu/EZRSxOGbz39JhwrEAANkMYMBWmX29h_YdsfeibZ_JM9pIw?e=EMmbxS
 #links: 
 #    - url: https://google.com
 #      name: slides
