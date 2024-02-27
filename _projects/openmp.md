@@ -21,15 +21,15 @@ due_event:
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>One</b> (02/19)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇Seyfal Sultanov (32x)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈Kirk Tejas (6x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇Seyfal Sultanov (34.0x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈Kirk Tejas (6.0x)</td>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉-</td>
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Two</b> (02/26)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇-</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈-</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉-</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇Seyfal Sultanov (53.2x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈Kirk Tejas (6.0x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉Soham Gumaste (3.7x)</td>
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Three</b> (03/04)</td>
