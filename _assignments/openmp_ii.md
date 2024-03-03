@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-02-15T14:00:00-0600
-title: Parallel Reduction with Performance Analysis
+title: A06 - Parallel Reduction with Performance Analysis
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

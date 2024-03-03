@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-04-11T14:00:00-0500
-title: MPI III
+title: A10 - MPI III
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

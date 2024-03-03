@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-01-11T14:00:00-0600
-title: Git and GitHub
+title: A01 - Git and GitHub
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

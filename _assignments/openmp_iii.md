@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-02-22T14:00:00-0600
-title: Strong and Weak Scaling with OpenMP
+title: A07 - Strong and Weak Scaling with OpenMP
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

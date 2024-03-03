@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-01-16T14:00:00-0600
-title: C++ and Make
+title: A02 - C++ and Make
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

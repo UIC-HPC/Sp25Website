@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-03-28T14:00:00-0500
-title: MPI I
+title: A08 - MPI I
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

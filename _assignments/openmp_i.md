@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-02-08T14:00:00-0600
-title: Hello World with OpenMP
+title: A05 - Hello World with OpenMP
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf

@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-02-01T14:00:00-0600
-title: Scalability of Threads in Quicksort
+title: A04 - Scalability of Threads in Quicksort
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
