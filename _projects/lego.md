@@ -1,7 +1,7 @@
 ---
 type: project
 date: 2024-01-25T14:00:00-0600
-title: Parallel Thinking
+title: P00 - Parallel Thinking
 #pdf: /static_files/projects/asg.pdf
 attachment: /static_files/projects/legoform.pdf
 #solutions: /static_files/assignments/asg_solutions.pdf

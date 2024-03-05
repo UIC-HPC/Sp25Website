@@ -1,7 +1,7 @@
 ---
 type: project
 date: 2024-01-30T14:00:00-0600
-title: Applications of HPC (Grad Students Only)
+title: GP00 - Applications of HPC (Grad Students Only)
 #pdf: /static_files/projects/asg.pdf
 #attachment: /static_files/projects/legoform.pdf
 #solutions: /static_files/assignments/asg_solutions.pdf

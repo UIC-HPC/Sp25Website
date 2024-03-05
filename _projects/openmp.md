@@ -1,7 +1,7 @@
 ---
 type: project
 date: 2024-02-07T23:59-0600
-title: Parallel Painting
+title: P01 - Parallel Painting
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
