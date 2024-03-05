@@ -33,9 +33,9 @@ due_event:
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Three</b> (03/04)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇-</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈-</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉-</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇Seyfal Sultanov (53.2x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈Vishwa Sheth (43.9x)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉Soham Gumaste (23.0x)</td>
     </tr>
 </table>
 <br>
