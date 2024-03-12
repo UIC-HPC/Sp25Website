@@ -4,6 +4,7 @@ date: 2024-03-12T14:00:00-0500
 title: Visualization
 tldr: "Introduction to visualization in HPC world"
 thumbnail: /_images/classlogo.png
+slides: https://uic365-my.sharepoint.com/:b:/g/personal/papka_uic_edu/EezrqlcLCy9Hu76LxpgaFXYBoKEein9MsSU5_Oq8zy7wGw?e=XZOXaQ
 #links: 
 #    - url: https://google.com
 #      name: slides
