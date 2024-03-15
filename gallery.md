@@ -1,0 +1,20 @@
+---
+layout: page
+title: Gallery
+permalink: /gallery/
+---
+
+<div class="page-content">
+  <div class="wrapper">
+    <h1>Image Gallery</h1>
+
+    <table>
+      {% for image_num in (2020..2047) %}
+      <tr>
+        <td><a href="/_images/Fieldtrip2024/IMG_{{ image_num }}.jpeg" target="_blank"><img src="/_images/Fieldtrip2024/IMG_{{ image_num }}.jpeg" alt="IMG_{{ image_num }}"></a></td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </div>
+</div>
