@@ -6,7 +6,7 @@ permalink: /gallery/
 
 <div class="page-content">
   <div class="wrapper">
-    <h1>Trip To Argonne National Laboratory 2024</h1>
+    <h1>Image Gallery</h1>
 
     <style>
       .gallery {
@@ -25,10 +25,10 @@ permalink: /gallery/
     </style>
 
     <div class="gallery">
-      {% for image_path in site.data.Fieldtrip2024 %}
+      {% for image_num in (2020..2047) %}
       <div class="gallery-cell">
-        <a href="{{ site.baseurl }}/_images/{{ image_path }}" target="_blank">
-          <img src="{{ site.baseurl }}/_images/{{ image_path }}" alt="{{ image_path | split: '/' | last }}" class="gallery-img">
+        <a href="{{ site.baseurl }}/_images/Fieldtrip2024/IMG_{{ image_num }}.jpeg" target="_blank">
+          <img src="{{ site.baseurl }}/_images/Fieldtrip2024/IMG_{{ image_num }}.jpeg" alt="IMG_{{ image_num }}" class="gallery-img">
         </a>
       </div>
       {% endfor %}
