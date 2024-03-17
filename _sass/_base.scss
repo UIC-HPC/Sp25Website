@@ -285,7 +285,7 @@
          letter-spacing: 0.03em;
      }
  
-     .table-row {
+    .table-row {
          background-color: #ffffff;
          border-color: whitesmoke;
          border-width: 0.1em;
@@ -293,9 +293,18 @@
          border-bottom: none;
      }
 
-     .table-row-divider {
+    .table-row-divider {
         padding: 4px 5px;
-        background-color: purple;
+        background-color: #001E62;
+        border-color: whitesmoke;
+        border-width: 0.1em;
+        border-style: solid;
+        border-bottom: none;
+    }
+
+    .table-row-divider2 {
+        padding: 4px 5px;
+        background-color: whitesmoke;
         border-color: whitesmoke;
         border-width: 0.1em;
         border-style: solid;
@@ -303,16 +312,21 @@
     }
 
     .divider-purple {
-       border-bottom: 0.5px solid purple;
+       border-bottom: 0.5px solid rgb(34, 0, 128);
        margin: 0.005px 0;
    }
+
+   .divider-special {
+    border-bottom: 0.5px solid rgb(15, 128, 0);
+    margin: 0.005px 0;
+}
  
      .table-row-assignment {
-         background-color: #def2de;
+         background-color: #ECF8FD;
      }
  
      .table-row-due {
-         background-color: #FCF8E5;
+         background-color: #EFF6F7;
      }
  
      .table-row-exam {
@@ -353,6 +367,17 @@
              margin-bottom: 0;
          }
      }
+
+    .col-full {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        text-align: center; /* Center text if desired */
+        font-weight: bold; /* Make text bold if that's a requirement */
+        background-color: #f8f9fa; /* Example background color */
+        color: #FFFFFF; /* Example text color */
+    }
+    
  
      .date-spliter {}
  
