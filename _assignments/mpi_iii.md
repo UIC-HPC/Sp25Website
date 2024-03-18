@@ -78,10 +78,11 @@ int main(int argc, char** argv) {
 
 1. Ensure your system is equipped with a C++ compiler and OpenMP support, along with an MPI library.
 2. Expand the provided `hybridintegration.cc` to partition the domain among MPI processes and parallelize the computation using OpenMP.
-3. Compile the program with `mpicxx -fopenmp -o hybridintegration hybridintegration.cc`.
-4. Execute your program using `mpiexec -n <number_of_processes> ./hybridintegration`, setting `OMP_NUM_THREADS` to control the OpenMP threads per process.
-5. Reflect on your learning experience regarding hybrid parallel computing with MPI and OpenMP after completing the task.
-6. Adhere to the semester-long guidelines for code submission including commit, push, and pull request processes.
+3. Create a Makefile to compile program.
+4. Create a `hybridintegration.pbs` PBS script for running your program.
+5. Submit your job using the `qsub` command if on ACER Extreme.
+6. Reflect on your learning experience regarding hybrid parallel computing with MPI and OpenMP after completing the task.
+7. Adhere to the semester-long guidelines for code submission including commit, push, and pull request processes.
 
 ## Expected Learning Outcome
 
