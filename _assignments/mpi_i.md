@@ -5,10 +5,10 @@ title: A08 - Hello World with MPI
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
-#classroom: ../../static_files/not-yet.html
+classroom: https://classroom.github.com/a/7TazeMsz
 due_event: 
     type: due
-    date: 2024-04-02T14:00:00-0500
+    date: 2024-04-02T23:59:00-0500
     description: A08 - Hello World with MPI Due
 ---
 # MPI Hello World in C++
@@ -50,36 +50,30 @@ int main(int argc, char** argv) {
 }
 ```
 
-## Instructions
+## Instructions for MPI "Hello, World!" Assignment
 
-1. Ensure your environment is configured for MPI by loading the necessary modules, specifically OpenMPI using `module load OpenMPI`. You can verify the modules loaded with `module list`.
-2. Complete the code to have each process print "Hello, World!" followed by its rank.
-3. Create a `Makefile` for this program that builds the executable `hellompi`, as well as a `make all` and `make clean`. Make sure you add this file to your repository.
-4. Compile the MPI program. 
+1. **Environment Configuration**: Start by configuring your environment for MPI development. Load the necessary OpenMPI module with `module load OpenMPI`. Verify the loaded modules with `module list` to ensure everything is set up correctly.
+2. **Code Completion**: Your task is to modify the provided starter code so that each process prints "Hello, World!" along with its MPI rank. This simple exercise will help you get acquainted with basic MPI commands and process management.
+3. **Makefile Creation and Compile**: Develop a `Makefile` for your project to simplify the compilation process. This Makefile should facilitate building the executable named `hellompi` and include `make all` for compiling and `make clean` for removing compiled binaries and other artifacts. Ensure you commit this Makefile to your repository. Utilize the Makefile you created to compile the MPI program. This step transforms your source code into an executable, `hellompi`, ready for execution on the ACER Extreme HPC system.
+4. **Job Submission**: With the `hellompi.pbs` script ready, submit your job to the ACER Extreme system using the `qsub` command. This action queues your program for execution according to the specifications in your PBS script. Prepare a PBS script named `hellompi.pbs` for job submission if you're using the ACER Extreme resource. This script is crucial for managing the job's execution environment, specifying the job's resource requirements, and ensuring the MPI program runs across multiple nodes.
 
-### PBS Script (`hellompi.pbs`)
+    ```bash
+    #!/bin/bash
+    #PBS -N hellompi              # Job name
+    #PBS -q edu_shared            # Queue name
+    #PBS -l nodes=4:ppn=1         # Request 4 nodes and 1 processor per node
+    #PBS -l walltime=00:01:00     # Maximum walltime for the job
+    #PBS -o hellompi.otxt         # Output file name
+    #PBS -e hellompi.etxt         # Error file name
+    #PBS -V                       # Export all environment variables to the job
 
-```bash
-#!/bin/bash
-#PBS -N hellompi              # Job name
-#PBS -q edu_shared            # Queue name
-#PBS -l nodes=4:ppn=1         # Request 4 nodes and 1 processor per node
-#PBS -l walltime=00:01:00     # Maximum walltime for the job
-#PBS -o hellompi.otxt         # Output file
-#PBS -e hellompi.etxt         # Error file
-#PBS -V                       # Export all environment variables to the job
+    cd $PBS_O_WORKDIR             # Change to the job submission directory
+    module load OpenMPI           # Load the OpenMPI module
+    mpirun -np 4 ./hellompi       # Execute the MPI program with 4 processes
+    ```
 
-cd $PBS_O_WORKDIR             # Navigate to the job submission directory
-
-module load OpenMPI           # Load the OpenMPI module
-
-mpirun -np 4 ./hellompi       # Execute the MPI program
-```
-
-4. If using the ACER resource, create a PBS script named `hellompi.pbs` for job submission. This script should manage module loading and program execution across 4 nodes.
-5. Submit your job using the `qsub` command if on ACER Extreme.
-6. Reflect on what you have learned about parallel computing and MPI after completing the assignment.
-7. Follow the semester-long guidelines for committing your changes, pushing to your repository, and issuing a pull request.
+5. **Reflective Learning**: After completing the assignment, take a moment to reflect on your learning experience with parallel computing and MPI. Consider the concepts you've grasped, the challenges you encountered, and how you addressed them. This reflection is an integral part of your learning process.
+6. **Code Submission Guidelines**: Follow the established practices for code submission. Commit your changes, including the source code, Makefile, and PBS script, to your GitHub repository. Then, push these changes to a remote repository and create a pull request for review.
 
 ## Submission Guidelines
 
@@ -88,15 +82,12 @@ mpirun -np 4 ./hellompi       # Execute the MPI program
 3. Follow the provided submission instructions for committing and pushing your changes.
 
 ## Evaluation Criteria
-
-1. Correct implementation of MPI Hello World program.
-2. Proper execution and output of the program.
-3. Adherence to submission guidelines and coding standards.
-4. Reflection on parallel computing and MPI.
+Submissions will be assessed on key criteria. First, the correctness of the MPI Hello World program's implementation will be evaluated. Then, we'll check the program for proper execution and accurate output. Third, adherence to submission guidelines and coding standards will be reviewed. Lastly, your reflections on learning and challenges with parallel computing and MPI will be considered, providing insights into your problem-solving process.
 
 ## Reflection
-
-Reflect on what you have learned about parallel computing and MPI after completing the assignment. Discuss any challenges faced and lessons learned during the process.
+After completing the assignment:
+1. Reflect on what you have learned about parallel computing and MPI.
+2. Discuss any challenges faced and lessons learned during the process.
 
 ## Additional Resources
 
@@ -104,4 +95,3 @@ Reflect on what you have learned about parallel computing and MPI after completi
 - [Open MPI v4.1.6 Documentation](https://www.open-mpi.org/doc/current/)
 - [Message Passing Interface (MPI)](https://computing.llnl.gov/tutorials/mpi/)
 - [Man pages for MPI](https://www.mpich.org/static/docs/latest/)
-

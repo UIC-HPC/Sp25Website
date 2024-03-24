@@ -28,6 +28,8 @@ google_analytics: G-RDB7MC9C75
 
 # Build settings
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 
 # Other options
 permalink: pretty

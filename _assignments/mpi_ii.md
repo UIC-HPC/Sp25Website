@@ -5,13 +5,13 @@ title: A09 - MPI Data Distribution and Collective Operations
 #pdf: /static_files/assignments/asg.pdf
 #attachment: /static_files/assignments/asg.zip
 #solutions: /static_files/assignments/asg_solutions.pdf
-#classroom: ../../static_files/not-yet.html
+classroom: https://classroom.github.com/a/DjZmQgZv
 due_event: 
     type: due
-    date: 2024-04-09T14:00:00-0500
+    date: 2024-04-09T23:59:00-0500
     description: MPI Data Distribution and Collective Operations Due
 ---
-# MPI Data Distribution and Collective Operations Assignment
+# MPI Data Distribution and Collective Operations
 
 ## Objective
 This assignment aims to learn to utilize MPI's collective communication capabilities and understand data distribution among multiple processes. Students will implement a program that evenly distributes an array of integers across all MPI processes. Each process calculates the sum of its assigned integers, and all processes collectively compute the total sum. The root process will then print the total sum.
@@ -61,22 +61,21 @@ int main(int argc, char** argv) {
 }
 ```
 
-## Instructions
-1. Ensure you have a C++ compiler and the MPI library by loading the appropriate modules.
-2. Modify the starter code to distribute the array of integers and perform the sum across all processes.
-3. Create a Makefile to compile the program `datadistribution`, ensuring you have a `make all` and `make clean`.
-4. Develop a `datadistribution.pbs` PBS script for running your program.
-5. Submit your job using the `qsub` command on ACER Extreme resource.
-6. Modify your program to measure the execution time of the parallel section, including the distribution of the array, local sum computation, and the collective operation to compute the total sum.
-7. Execute your program on 1, 2, 4, and 8 nodes. Ensure consistency in the execution environment for comparability of results.
-8. Analyze execution time data and create a graph plotting total execution time against the number of nodes. Include this graph in your submission.
-9. Add the performance graph and your modified source code, Makefile, and PBS scripts to your repository.
-10. Reflect on what you have learned about parallel computing and MPI after completing the assignment.
-11. Follow the semester-long guidelines for committing changes, pushing to your repository, and issuing a pull request.
+## Instructions for Data Distribution and Summation Assignment
+
+1. **Environment Preparation**: Load the necessary modules on the ACER Extreme system to access a C++ compiler and an MPI library. Utilize the `module load` command to equip your environment with the tools required for compiling and running your assignment on parallel programming.
+2. **Modify the Starter Code**: Start with the provided starter file. Your task is to alter this code to distribute an array of integers across multiple MPI processes and perform the summation across all these processes efficiently.
+3. **Compile Using Makefile**: Create a `Makefile` that eases the compilation process of your project. Ensure it includes `make all` for compiling the `datadistribution` program and `make clean` to remove any compiled binaries and build artifacts. This facilitates an organized and efficient build process.
+4. **Generate PBS Script**: Craft a Portable Batch System (PBS) script named `datadistribution.pbs` to run your program using ACER's High-Performance Computing (HPC) resources. This script should outline the required computing resources, like the number of nodes and processors per node, critical for your program's execution on an HPC system.
+5. **Job Submission**: Employ the `qsub` command to submit your program for execution on the ACER Extreme system, with your `datadistribution.pbs` script as the parameter. This will place your program in the queue for execution on the cluster.
+6. **Performance Exploration**: Adjust your program to record the execution time of the parallel section, which includes the array distribution, local sum calculation, and the collective operation for the total sum computation. This step is crucial for performance analysis. Run your program on different node configurations: 1, 2, 4, and 8 nodes. Ensure that the execution environment remains consistent across these runs to maintain result comparability.
+7. **Data Analysis and Visualization**: Analyze the collected execution time data and plot a graph showing the total execution time against the number of nodes used. This graph is an essential part of your submission, as it provides visual insight into the scalability of your solution.
+8. **Reflective Learning**: Upon completing your experiments, reflect on your journey with parallel computing and MPI. Discuss the challenges encountered, solutions devised, and insights gained. This reflection fosters a deeper understanding of parallel computing concepts and MPI.
+9. **Follow Submission Guidelines**: Adhere to the established guidelines for code submission throughout the semester. This includes committing your changes to GitHub, pushing them to a remote repository, and initiating a pull request for review.
 
 ## Submission Guidelines
 1. Ensure your code is properly documented and follows best practices.
-2. Include all necessary files, including the modified source code, Makefile, PBS scripts, and the performance graph.
+2. Include all necessary files, including the modified source code, Makefile, PBS scripts, and the performance graph(s).
 3. Follow the provided submission instructions for committing and pushing your changes.
 
 ## Evaluation Criteria
