@@ -1,8 +1,8 @@
 ---
 type: lecture
 date: 2024-04-04T14:00:00-0500
-title: MPI Hands-On I
-tldr: "Getting hands dirty with MPI"
+title: No Class Meeting
+tldr: "Take time to explore MPI"
 thumbnail: /_images/classlogo.png
 #links: 
 #    - url: https://google.com
@@ -10,3 +10,4 @@ thumbnail: /_images/classlogo.png
 #   - url: /static_files/presentations/code.zip
 #      name: codes
 ---
+**Spend some time coding MPI!** 

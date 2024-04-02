@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-04-11T14:00:00-0500
-title: MPI Hands-On III
+title: MPI Hands-On II
 #tldr: "On node and across nodes"
 thumbnail: /_images/classlogo.png
 ---
