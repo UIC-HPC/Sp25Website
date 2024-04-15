@@ -21,15 +21,15 @@ due_event:
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>One</b> (03/07)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇 -</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈 -</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉 -</td>
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Two</b> (03/14)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇 Seyfal Sultanov - 21x</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈 - </td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉 - </td>
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Three</b> (03/21)</td>
