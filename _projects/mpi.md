@@ -33,9 +33,9 @@ due_event:
     </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;"><b>Three</b> (03/21)</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥇 Ali Siddiqui - 511x</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥈 Seyfal Sultanov - 21x</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">🥉 Kirk Tejas - 3x</td>
     </tr>
 </table>
 <br>
