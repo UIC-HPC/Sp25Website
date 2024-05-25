@@ -1,0 +1,91 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <!-- School Information -->
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <!-- School Address -->
+        <p class="text">
+          {{ site.address | newline_to_br }}
+        </p>
+        <span style="font-size: small;">
+          Copyright &copy;{{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }} {{ site.footer_text }}
+          {%- if site.last_updated -%}
+          <b>Last updated:</b> {{ "now" | date: '%B %d, %Y' }}
+          {%- endif %}
+        </span>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <!-- GitHub -->
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fab fa-github" style="color: gray"></i> {{ site.github_username }}
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- Twitter -->
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fab fa-twitter" style="color: gray"></i> {{ site.twitter_username }}
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- Google Scholar -->
+          {% if site.google_scholar_id %}
+          <li>
+            <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
+              <i class="ai ai-google-scholar" style="color: gray"></i> {{ site.google_scholar_id }}
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- ORCID -->
+          {% if site.orcid_id %}
+          <li>
+            <a href="https://orcid.org/{{ site.orcid_id }}">
+              <i class="ai ai-orcid" style="color: gray"></i> {{ site.orcid_id }}
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- Blackboard Link -->
+          {% if site.blackboard %}
+          <li>
+            <a href="{{ site.blackboard }}">
+              <i class="fas fa-globe" style="color: gray"></i> blackboard
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- Department Website Link -->
+          {% if site.department %}
+          <li>
+            <a href="{{ site.department }}">
+              <i class="fas fa-globe" style="color: gray"></i>
+              {{ site.department | remove: "https://" | remove: "http://" | remove: "www." }}
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- School Website Link -->
+          {% if site.schoolurl %}
+          <li>
+            <a href="{{ site.schoolurl }}">
+              <i class="fas fa-globe" style="color: gray"></i>
+              {{ site.schoolurl | remove: "https://" | remove: "http://" | remove: "www." }}
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <!-- End of School Information -->
+
+  </div>
+</footer>

@@ -7,35 +7,29 @@ layout: page
 <ul id="archive">
 {% assign sorted_lectures = site.lectures | sort: 'date' | reverse %}
 {% for lecture in sorted_lectures %}
-  {% if lecture.date < site.time %}
+{% if lecture.date < site.time %}
   <li class="archiveposturl" style="background: transparent">
   <div class="lecture-container">
-      {% if lecture.thumbnail %}
-      <div class="thumbnail">
-        <div class="center-cropped-noborder" style="margin-top:5px;margin-bottom:5px;background-image: url('{{ lecture.thumbnail | prepend: site.baseurl }}');">
-          <img src="{{ lecture.thumbnail | prepend: site.baseurl }}"/>
-        </div>
-      </div>
-      {% endif %}
+
       <div class="content">
-          <span style="font-weight: bold;"><a href="{{ lecture.url | prepend: site.baseurl }}">{{ lecture.title }}</a></span><br>
-
-  <!--        <strong>tl;dr:</strong> {{ lecture.tldr }} -->
-          {{ lecture.tldr }}
-          <br/>
-          <strong>
-          {% include lecture_links.html lecture=lecture %}
-          </strong>
-
+        <span class="post-meta">{{ lecture.date | date: "%A" }} {{ lecture.date | date: site.dateformat }} </span><br>
+          <h1 style="font-weight: bold;"> {{ lecture.title }}</h1>
+          {% if lecture.tldr %}
+          <strong>tl;dr:</strong> {{ lecture.tldr }}<br>
+          {% endif %}
+          {% if lecture.slides or lecture.code %}
+          <strong>Artifacts:</strong> 
+              {% if lecture.slides %}[<a href="{{ lecture.slides }}">slides</a>]{% endif %}
+              {% if lecture.slides and lecture.code %}{% endif %}
+              {% if lecture.code %}[<a href="{{ lecture.code }}">code</a>]{% endif %}
+          <br>
+          {% endif %}
           {% if lecture.content != '' %}
-          <br/>
-          <div class="markdown-content" style="margin-top: 3px;">
-          {{ lecture.content }}
-          </div>
+            {{ lecture.content }}
           {% endif %}
       </div>
   </div>
   </li>
-  {% endif %}
+{% endif %}
 {% endfor %}
 </ul>

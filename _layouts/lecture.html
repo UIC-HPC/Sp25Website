@@ -3,16 +3,27 @@ layout: default
 title: page.title
 ---
 <div class="post">
-
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }} Lecture</h1>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">Lecture: {{ page.date | date: "%A" }} {{ page.date | date: site.dateformat }} </p>
+    <p class="post-meta">{{ page.tldr }} </p>
   </header>
-
   {% assign trimmed_content = content | remove_html_comments | strip_newlines | strip %}
   {% if trimmed_content.size > 0 %}
+    <div>
+      {% if page.slides or page.code  %}
+      <p>
+        {% if page.slides %}
+        [<a href="{{ page.slides }}">slides</a>]
+        {% endif %}
+        {% if page.code %}
+        [<a href="{{ page.attachment | prepend: site.baseurl }}">code</a>]
+        {% endif %}
+      </p>
+      {% endif %}  
+    <hr><br>
     <article class="post-content">
-      {{ content }}
+        {{ content }}
     </article>
-  {% endif %}
-
+    {% endif %}
 </div>

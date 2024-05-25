@@ -1,67 +1,74 @@
 <footer class="site-footer">
-
   <div class="wrapper">
-
-<!--     <h2 class="footer-heading">{{ site.schoolname }}</h2> -->
-         <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
- 
-
-         <p class="text">
-{{ site.address | newline_to_br  }}
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="text">
+          {{ site.address | newline_to_br }}
+        </p>
       </div>
-
-      <div class="footer-col  footer-col-2">
-       <ul class="social-media-list">
-     
-
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <!-- Social Media Links -->
           {% if site.github_username %}
-  <li>
-    <a href="https://github.com/{{ site.github_username }}">
-      <i class="fab fa-github" style="color:gray"></i> {{ site.github_username }}
-    </a>
-  </li>
-{% endif %}
-
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fab fa-github" style="color: gray"></i> {{ site.github_username }}
+            </a>
+          </li>
+          {% endif %}
           {% if site.twitter_username %}
-  <li>
-    <a href="https://twitter.com/{{ site.twitter_username }}">
-      <i class="fab fa-twitter" style="color:gray"></i> {{ site.twitter_username }}
-    </a>
-  </li>
-{% endif %}
-
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fab fa-twitter" style="color: gray"></i> {{ site.twitter_username }}
+            </a>
+          </li>
+          {% endif %}
           {% if site.google_scholar_id %}
-  <li>
-    <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
-      <i class="ai ai-google-scholar" style="color:gray"></i> {{ site.google_scholar_id }}
-    </a>
-  </li>
-{% endif %}
-
+          <li>
+            <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
+              <i class="ai ai-google-scholar" style="color: gray"></i> {{ site.google_scholar_id }}
+            </a>
+          </li>
+          {% endif %}
           {% if site.orcid_id %}
-  <li>
-    <a href="https://orcid.org/{{ site.orcid_id }}">
-      <i class="ai ai-orcid" style="color:gray"></i> {{ site.orcid_id }}
-    </a>
-  </li>
-{% endif %}
-
+          <li>
+            <a href="https://orcid.org/{{ site.orcid_id }}">
+              <i class="ai ai-orcid" style="color: gray"></i> {{ site.orcid_id }}
+            </a>
+          </li>
+          {% endif %}
+          {% if site.blackboard %}
+          <li>
+            <a href="{{ site.blackboard }}">
+              <i class="fas fa-globe" style="color: gray"></i> blackboard
+            </a>
+          </li>
+          {% endif %}
+          {% if site.department %}
+          <li>
+            <a href="{{ site.department }}">
+              <i class="fas fa-globe" style="color: gray"></i> {{ site.department | remove: "https://" | remove: "http://" | remove: "www." }}
+            </a>
+          </li>
+          {% endif %}
           {% if site.schoolurl %}
-  <li>
-    <a href="{{site.schoolurl}}">
-      <i class="fas fa-globe" style="color:gray"></i> {{site.schoolurl |  remove: "https://" | remove: "http://" | remove: "www." }}
-    </a>
-  </li>
-{% endif %}
-
-
-
-       
+          <li>
+            <a href="{{ site.schoolurl }}">
+              <i class="fas fa-globe" style="color: gray"></i> {{ site.schoolurl | remove: "https://" | remove: "http://" | remove: "www." }}
+            </a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </div>
-
+    <!-- Copyright and Last Updated Information -->
+    <div style="display: flex; justify-content: space-between; font-size: 0.75em; margin-top: 20px;">
+      <span>
+        Copyright &copy;{{ site.time | date: '%Y' }}
+      </span>
+      <span>
+        <b>Last updated:</b> {{ "now" | date: '%B %d, %Y %I:%M %p' }}
+      </span>
+    </div>
   </div>
-
 </footer>

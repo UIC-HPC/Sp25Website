@@ -9,8 +9,10 @@ last_updated: true # set to true if you want to display last updated in the foot
 
 schoolname: "University of Illinois Chicago"
 schoolurl: "https://www.uic.edu"
-twitter_username: mpapka
-github_username: mpapka
+blackboard: "https://uic.blackboard.com"
+department: "https://www.cs.uic.edu"
+#twitter_username: mpapka
+#github_username: mpapka
 #google_scholar_id: pQwfBFwAAAAJ # your Google Scholar ID
 #orcid_id: 0000-0002-6418-5767 # your ORCID ID
 
@@ -20,12 +22,14 @@ address: |
     Chicago, IL 60607
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
-# google_analytics: UA-XXXXXXXX-X
+google_analytics: G-RDB7MC9C75
 
 ### Do not change the followings unless you know what you are doing ###
 
 # Build settings
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 
 # Other options
 permalink: pretty
@@ -65,3 +69,22 @@ defaults:
       type: "lectures"
     values:
       layout: "lecture"
+
+
+# Includes & excludes
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# -----------------------------------------------------------------------------
+# Jekyll Link Attributes
+# -----------------------------------------------------------------------------
+
+# These are the defaults
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+  exclude:
