@@ -6,32 +6,34 @@ permalink: /gallery/
 
 <div class="page-content">
   <div class="wrapper">
-    <h1>Trip To Argonne National Laboratory 2024</h1>
 
-    <style>
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .gallery-cell {
-        width: 33.333%; /* Approximate, considering margins/padding */
-        box-sizing: border-box;
-        padding: 5px; /* Adjust based on preference */
-      }
-      .gallery-img {
-        width: 100%; /* Make the image fill the container */
-        height: auto; /* Maintain aspect ratio */
-      }
-    </style>
+    {% assign image_extensions = "jpg,jpeg,png,gif" | split: "," %}
+    {% assign galleries = "" | split: "" %}
 
-    <div class="gallery">
-      {% for image_path in site.data.Fieldtrip2024 %}
-      <div class="gallery-cell">
-        <a href="{{ site.baseurl }}/_images/{{ image_path }}" target="_blank">
-          <img src="{{ site.baseurl }}/_images/{{ image_path }}" alt="{{ image_path | split: '/' | last }}" class="gallery-img">
-        </a>
-      </div>
+    {% comment %}
+    Collect gallery names by iterating over static files
+    {% endcomment %}
+    {% for file in site.static_files %}
+      {% assign filename = file.path | split: '/' | last %}
+      {% assign ext = filename | split: '.' | last | downcase %}
+      {% if image_extensions contains ext %}
+        {% if file.path contains '/assets/images/' %}
+          {% assign gallery_name = file.path | remove: '/assets/images/' | split: '/' | first %}
+          {% unless galleries contains gallery_name %}
+            {% assign galleries = galleries | push: gallery_name %}
+          {% endunless %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% comment %}
+    List galleries as links
+    {% endcomment %}
+    <ul>
+      {% for gallery in galleries %}
+        <li><a href="{{ '/gallery/' | append: gallery | relative_url }}">{{ gallery | capitalize }}</a></li>
       {% endfor %}
-    </div>
+    </ul>
+
   </div>
 </div>

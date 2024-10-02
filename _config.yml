@@ -52,6 +52,8 @@ collections:
         output: true
     announcements:
         output: false
+    galleries:
+        output: true
 
 defaults:
   - scope:

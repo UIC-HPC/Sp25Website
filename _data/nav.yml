@@ -19,6 +19,10 @@ items:
   name: Projects
   icon_class: fas fa-user-graduate
 
+- url: /gallery/
+  name: Gallery
+  icon_class: fas fa-camera
+
 - url: /materials/
   name: Materials
   icon_class: fas fa-book
